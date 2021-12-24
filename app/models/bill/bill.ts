@@ -7,7 +7,7 @@ export const BillModel = types
   .model("Bill")
   .props({
     id: types.identifierNumber,
-    customerId: types.identifierNumber,
+    customerId: types.maybe(types.number),
     total: types.maybe(types.number),
   })
   .views((self) => ({})) // eslint-disable-line @typescript-eslint/no-unused-vars

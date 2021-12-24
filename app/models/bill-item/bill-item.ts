@@ -7,10 +7,10 @@ export const BillItemModel = types
   .model("BillItem")
   .props({
     id: types.identifierNumber,
-    idBill: types.identifierNumber,
-    productId: types.identifierNumber,
-    price: types.maybe(types.identifierNumber),
-    quantity: types.maybe(types.identifierNumber),
+    idBill: types.maybe(types.number),
+    productId: types.maybe(types.number),
+    price: types.maybe(types.number),
+    quantity: types.maybe(types.number),
     color: types.maybe(types.string)
   })
   .views((self) => ({})) // eslint-disable-line @typescript-eslint/no-unused-vars
