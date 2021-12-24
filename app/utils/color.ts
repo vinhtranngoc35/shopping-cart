@@ -1,0 +1,1 @@
+export const COLORS = [{ name: 'Black' }, { name: 'Blue' }, { name: 'Gold' }, { name: 'White' }]
